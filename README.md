@@ -14,6 +14,8 @@
   * mergesort
     * [merge two sorted arrays] (https://leetcode.com/problems/merge-sorted-array/)    --merge part of the mergesort
   * binary search
+    * [search a 2d matrix] (https://leetcode.com/problems/search-a-2d-matrix/)    --the brute force solution of a usual search/find problem is O(n) by linear search, which sets the upper bound. In order to perform better than O(n), binary search on a sorted array is the usual idea
+    * [search a 2d matrix 2] (https://leetcode.com/problems/search-a-2d-matrix-ii/)    --the essential thinking is still binary search: we find a pivot and we choose to go only one direction a time.
     * [search in rotated sorted array without duplicates] (https://leetcode.com/problems/search-in-rotated-sorted-array/)       --need to do twice binary search
     * [search in rotated sorted array with duplicates] (https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)       --we can still use binary search with duplicates, but the worst case is O(n) 
     * sparse search    -- same idea with the rotated sorted array with duplicates: we can use binary search, but the worst case is O(n) 
