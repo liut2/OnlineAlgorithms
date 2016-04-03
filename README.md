@@ -1,4 +1,7 @@
-
+## Symbol Table + BST + Ordered Operations
+  * [closest binary search tree value] (https://leetcode.com/problems/closest-binary-search-tree-value/)    --very similar to search in a BST; in essence, the operations on BST are also binary search, in a recursive manner
+  * [kth smallest element in a BST] (https://leetcode.com/problems/kth-smallest-element-in-a-bst/)    --if we need to calc size of the left subtree, then the time complexity is O(k); but we can do better by keep a counter of the size of BST rooted at current node, updated by every insertion/deletion, that will be O(1) for size()
+  
 ## DFS + Exhasutive Search
   * [arrange table according to heights] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/ArrangeTable.java)    --the difference between this question and a standard permutation one is that we need to fix the first element because the result is in a ring, meaning multiple permutation is actually the same thing.
   * [recover report] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/RecoverReport.java)    --this question is similar to decode ways in that we have two choices at each level
