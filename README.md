@@ -5,6 +5,7 @@
 ## DFS + Exhasutive Search
   * [arrange table according to heights] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/ArrangeTable.java)    --the difference between this question and a standard permutation one is that we need to fix the first element because the result is in a ring, meaning multiple permutation is actually the same thing.
   * [recover report] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/RecoverReport.java)    --this question is similar to decode ways in that we have two choices at each level
+  * [add plus or minus] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/AddPlusOrMinus.java)    --math expression DFS is a special type exhaustive search quesion; there is "logically" two for loops on each level: you not only need to choose current numbers, but also the next operator for to use 
   
 ## Big Data Processing
   * missing int    --need to revisit this question
