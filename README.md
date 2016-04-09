@@ -5,6 +5,7 @@
 ## DFS + Exhasutive Search
   * [arrange table according to heights] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/ArrangeTable.java)    --the difference between this question and a standard permutation one is that we need to fix the first element because the result is in a ring, meaning multiple permutation is actually the same thing.
   * [recover report] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/RecoverReport.java)    --this question is similar to decode ways in that we have two choices at each level
+  * [add plus or minus] (https://github.com/liut2/OnlineAlgorithms/blob/master/DFS%2BSearch/AddPlusOrMinus.java)    --math expression DFS is a special type exhaustive search quesion; there is "logically" two for loops on each level: you not only need to choose current numbers, but also the next operator for to use 
   
 ## Big Data Processing
   * missing int    --need to revisit this question
@@ -23,3 +24,18 @@
     * [search in rotated sorted array with duplicates] (https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)       --we can still use binary search with duplicates, but the worst case is O(n) 
     * sparse search    -- same idea with the rotated sorted array with duplicates: we can use binary search, but the worst case is O(n) 
     * [search in a big sorted array] (http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)    --a bit tricky to find the end point; also need to do twice binary search
+
+## Interval and Scan Line
+  * [Number of Airplanes in the Sky ] (http://www.lintcode.com/en/problem/number-of-airplanes-in-the-sky/)    --a basic use of the scan line algorithm to sort the interval end points; the tricky part is to write a proper comparator 
+  * [Building Outline ] (http://www.lintcode.com/en/problem/building-outline/)    --a combination use of scan line algorithm and PQ data structure to find max height
+  
+## PQ and Max/Min in O(1)
+  * [Building Outline ] (http://www.lintcode.com/en/problem/building-outline/)    --a combination use of scan line algorithm and PQ data structure to find max height
+  * [Trapping Rain Water II ] (http://www.lintcode.com/en/problem/trapping-rain-water-ii/)    --an extension from 2d to 3d problem; the tricky part is to imagine a wall from which the shortest one is always taken out, which reminds us of find min in O(1) with PQ
+  * [Data Stream Median ] (http://www.lintcode.com/en/problem/data-stream-median/)    --when asked about median in changing data, always think of a maxHeap and a minHeap, which together could solve the question; if the data is not fixed, we might use quick-select to find median in an unsorted array
+  * [Sliding Window Median] (www.lintcode.com/en/problem/sliding-window-median/)    --similar idea with data stream median, the only difference here is the "sliding window", for which the core idea is to add one first and remove one later before the real comparison starts
+  
+## Sliding Window    
+--the difference between the sliding window and two pointers question is that for sliding window, we always need to add one and remove one since the container is a fixed size, while for two pointers, some compressing ideas are used and we cannot gurantee adding one and removing one all the time
+  * [Sliding Window Median] (www.lintcode.com/en/problem/sliding-window-median/)    --similar idea with data stream median, the only difference here is the "sliding window", for which the core idea is to add one first and remove one later before the real comparison starts
+  * [Sliding Window Maximum ] (http://www.lintcode.com/en/problem/sliding-window-maximum/)    --here what I want to emphasize is the "sliding window idea I explained above.
