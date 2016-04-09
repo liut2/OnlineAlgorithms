@@ -39,3 +39,15 @@
 --the difference between the sliding window and two pointers question is that for sliding window, we always need to add one and remove one since the container is a fixed size, while for two pointers, some compressing ideas are used and we cannot gurantee adding one and removing one all the time
   * [Sliding Window Median] (www.lintcode.com/en/problem/sliding-window-median/)    --similar idea with data stream median, the only difference here is the "sliding window", for which the core idea is to add one first and remove one later before the real comparison starts
   * [Sliding Window Maximum ] (http://www.lintcode.com/en/problem/sliding-window-maximum/)    --here what I want to emphasize is the "sliding window idea I explained above.
+
+## Two Pointers
+* Two Sum
+  * [PointsOnLine] (https://github.com/liut2/OnlineAlgorithms/blob/master/Two%20Pointers/Two%20Sum/PointsOnLine.java)    --there are two methods to identify a two sum type question: 1) ask for pair and triple that satisfies certain pattern 2) the brute force solution itself is O(n^2) or O(n^3).
+* Guanshui
+  * [EatChocolate] (https://github.com/liut2/OnlineAlgorithms/blob/master/Two%20Pointers/%E7%81%8C%E6%B0%B4%E7%B1%BB/EatChocolate.java)    --the core idea of this type of two pointers is to go from the start and the end towards middle; along the way try to reduce scan as possible
+  * [Container With Most Water] (http://www.lintcode.com/en/problem/container-with-most-water/)    --classic guanshui question
+  * [Trapping Rain Water] (http://www.lintcode.com/en/problem/trapping-rain-water/)    --classic guanshui question
+
+## Dynamic Programming
+* matrix type
+  * [OneColumnOnes] (https://github.com/liut2/OnlineAlgorithms/blob/master/Dynamic%20Programming/OneColumnOnes.java)    --the reason I think of DP solution is that a normal exhaustive search takes exponential time, so DP can fix that to polynomial; also the question asks min moves but not actual operation, which makes it a perfect match for DP.
