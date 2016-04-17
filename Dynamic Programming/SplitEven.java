@@ -6,7 +6,7 @@ import java.util.*;
 
 public class SplitEven {
     public static void main(String[] args) {
-        int[] arr = {1, 6, 9, 24};
+        int[] arr = {1, 6, 9, 24, 3, 2};
         knapsack(arr);
     }
     public static void knapsack(int[] arr) {
